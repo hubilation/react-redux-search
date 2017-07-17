@@ -19,4 +19,3 @@ export const receiveSuggestions = (searchInput, suggestions) => {
         suggestions
     }
 }
-

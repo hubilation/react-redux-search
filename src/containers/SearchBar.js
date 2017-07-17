@@ -1,11 +1,13 @@
 import {connect} from 'react-redux'
-import {updateInput} from '../actions'
+import {updateInput, requestSuggestions} from '../actions'
+import {getSuggestions} from '../actions/getSuggestions'
 import Input from '../components/Input'
 
 const mapDispatchToProps = dispatch => {
     return {
         onChange: event => {
             dispatch(updateInput(event.target.value))
+            dispatch(getSuggestions(event.target.value))
         }
     }
 }

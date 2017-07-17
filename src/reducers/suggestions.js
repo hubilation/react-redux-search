@@ -9,7 +9,7 @@ const suggestions = (state = initialState.suggestions, action) => {
         case 'RECEIVE_SUGGESTIONS':
             return Object.assign({}, state, {
                 isFetching: false,
-                suggestions: action.initalState
+                suggestions: action.suggestions
             })
         default:
             return state
